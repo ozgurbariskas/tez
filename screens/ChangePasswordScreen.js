@@ -5,7 +5,7 @@ export default class ChangePasswordScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>Change Pass</Text>
+                <Text>Change Password</Text>
             </View>
         );
     };
