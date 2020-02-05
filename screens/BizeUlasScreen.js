@@ -5,7 +5,7 @@ export default class BizeUlasScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>Bize ukklas</Text>
+                <Text>Bize ulas</Text>
             </View>
         );
     };
