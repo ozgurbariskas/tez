@@ -11,6 +11,8 @@ import ProfileScreen from "./screens/ProfileScreen"
 import MessageScreen from "./screens/MessageScreen"
 import PostScreen from "./screens/PostScreen"
 import SettingScreen from "./screens/SettingScreen"
+import ChangePasswordScreen from "./screens/ChangePasswordScreen"
+import BizeUlasScreen from "./screens/BizeUlasScreen"
 
 import FirebaseKeys from "./Config.js"
 
@@ -87,6 +89,13 @@ const AuthStack = createStackNavigator({
     
 });
 
+const SettingsStack = createStackNavigator({
+    App:AppTabNavigator,
+    ChangePassword: ChangePasswordScreen,
+    BizeUlas:BizeUlasScreen,
+    
+});
+
 const AppContainer = createAppContainer(
 
     createSwitchNavigator(
@@ -94,7 +103,8 @@ const AppContainer = createAppContainer(
             Loading: LoadingScreen,
             App: AppTabNavigator,
             Auth: AuthStack,
-            Register: RegisterScreen
+            Register: RegisterScreen,
+            Setting:SettingsStack,
         },
         {
             initialRouteName: "Loading",
