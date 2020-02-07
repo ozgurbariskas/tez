@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image, TextInput } from 'react-native';
-
+import { Ionicons } from "@expo/vector-icons"
 
 export default class PostScreen extends React.Component {
 
@@ -32,6 +32,7 @@ export default class PostScreen extends React.Component {
                         source={require("../assets/PetMatchLogoColor.png")}
                         style={styles.avatarLogo}
                     ></Image>
+                    <Ionicons name="md-add" color="#620232" style={{position:"absolute",bottom:0,fontSize:40}} size={35}></Ionicons>
 
                 </View>
 
@@ -94,8 +95,9 @@ const styles = StyleSheet.create({
         width: "28%",
     },
     avatarLogo:{
-        height: "75%",
-        width: "63%",
+        height: "82%",
+        width: "72%",
+    
     },
     button: {
         flex: 1,
