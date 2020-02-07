@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     buttonLogoStyle: {
 
         height: "70%",
-        width: "36%",
+        width: "43%",
 
 
 
