@@ -27,8 +27,11 @@ export default class PostScreen extends React.Component {
 
                 </View>
 
-                <View style={[{ flex: 397 }, styles.logo]}>
-
+                <View style={[{ flex: 397 }, styles.avatarLogoView]}>
+                    <Image
+                        source={require("../assets/PetMatchLogoColor.png")}
+                        style={styles.avatarLogo}
+                    ></Image>
 
                 </View>
 
@@ -46,25 +49,23 @@ export default class PostScreen extends React.Component {
                 <View style={{ flex: 157, width: "83%" }}>
 
                     <TouchableOpacity onPress={() => alert("tamam")} style={styles.button} >
-                        <View style={{ flex: 22,justifyContent:'center',
-                        alignItems:'center', }}>
+                        <View style={{
+                            flex: 22, justifyContent: 'center',
+                            alignItems: 'center',
+                        }}>
                             <Image
                                 source={require("../assets/PetMatchLogoGriLittle.png")}
-                                style={styles.buttonLogoStyle}
+                                style={styles.buttonLogo}
                             ></Image>
                         </View>
-                        <View style={{ flex: 78 ,marginLeft:"10%"}}>
+                        <View style={{ flex: 78, marginLeft: "10%" }}>
 
                             <Text style={{ color: "#3B3B3B", fontWeight: "500", opacity: 0.6 }}>Paylaşmak için tıkla</Text>
                         </View>
-                       
-
-
 
                     </TouchableOpacity>
-
-
                 </View>
+
 
 
                 <View style={[{ flex: 300 },]}>
@@ -84,35 +85,32 @@ const styles = StyleSheet.create({
     },
 
 
-    logo: {
-        backgroundColor: "#A20453",
-        opacity: 0.1,
+    avatarLogoView: {
+        backgroundColor: "rgba(162,4,83,0.1)",
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 30000,
+        borderRadius: 3000,
         height: "100%",
         width: "28%",
-
-
+    },
+    avatarLogo:{
+        height: "75%",
+        width: "63%",
     },
     button: {
         flex: 1,
-        
         flexDirection: "row",
         borderRadius: 4,
         backgroundColor: "rgba(207,207,207,0.31)",
         height: "100%",
-        justifyContent:'center',
-        alignItems:'center',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 
-    buttonLogoStyle: {
+    buttonLogo: {
 
         height: "70%",
         width: "43%",
-
-
-
     },
 
 
