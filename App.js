@@ -85,17 +85,7 @@ const AppContainerStack = createStackNavigator(
 
         },
             {
-                defaultNavigationOptions: {
-                    tabBarOnPress: ({ navigation, defaltHandler }) => {
-                        if (navigation.state.key === "Post") {
-                            navigation.navigate("postModal")
-
-                        }
-                        else {
-                            defaltHandler();
-                        }
-                    }
-                },
+                
                 tabBarOptions: {
                     activeTintColor: "#161F3D",
                     inactiveTintColor: "#B8BBC4",
@@ -106,14 +96,12 @@ const AppContainerStack = createStackNavigator(
 
             }
         ),
-        postModal: {
-            screen: PostScreen
-        }
+      
     },
     {
-        mode:"modal",
+       
         headerMode:"none",
-        initialRouteName:"postModal"
+       
     }
 )
 
