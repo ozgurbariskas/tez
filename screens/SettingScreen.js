@@ -2,6 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity,LayoutAnimation } from 'react-native';
 import * as firebase from 'firebase'
 
+
+
+
 export default class SettingScreen extends React.Component {
     state = {
         email: "",
@@ -33,6 +36,8 @@ export default class SettingScreen extends React.Component {
         
 
 };
+
+
 
 const styles = StyleSheet.create({
     container: {
