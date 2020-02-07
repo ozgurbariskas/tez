@@ -13,7 +13,7 @@ export default class PostScreen extends React.Component {
 
 
                 <View style={[{ flex: 165 },styles.header]}>
-                <Text style={{fontSize:30,color:"#3B3B3B"}}>Gönderi Paylaş</Text>
+                <Text style={{fontSize:30,color:"#3B3B3B",fontWeight:"bold"}}>Gönderi Paylaş</Text>
                 </View>
 
 
@@ -36,7 +36,8 @@ export default class PostScreen extends React.Component {
                         source={require("../assets/PetMatchLogoColor.png")}
                         style={styles.avatarLogo}
                     ></Image>
-                    <Ionicons name="md-add" color="#620232" style={{ position: "absolute", bottom: 5, right: 35, fontWeight: "bold" }} size={35}></Ionicons>
+                    <Ionicons name="md-add" color="#620232" style={{
+                         position: "absolute", bottom: 5, right: 35, fontWeight: "bold" }} size={35}></Ionicons>
 
                 </View>
 
