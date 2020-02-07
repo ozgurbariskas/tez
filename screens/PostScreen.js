@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     },
     avatarLogo:{
         height: "82%",
-        width: "72%",
+        width: "74%",
     
     },
     button: {
