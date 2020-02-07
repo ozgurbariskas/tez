@@ -7,13 +7,17 @@ export default class PostScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <View style={[{ flex: 132 },]}>
-
+                <View style={{ flex: 132 }}>
+                    
                 </View>
-                <View style={[{ flex: 148 },]}>
 
+
+                <View style={[{ flex: 165 },styles.header]}>
+                <Text style={{fontSize:30,color:"#3B3B3B"}}>Gönderi Paylaş</Text>
                 </View>
-                <View style={[{ flex: 327 },]}>
+
+
+                <View style={[{ flex: 200 },]}>
 
                 </View>
 
@@ -32,14 +36,14 @@ export default class PostScreen extends React.Component {
                         source={require("../assets/PetMatchLogoColor.png")}
                         style={styles.avatarLogo}
                     ></Image>
-                    <Ionicons name="md-add" color="#620232" style={{position:"absolute",bottom:5,right:35,fontWeight:"bold"}} size={35}></Ionicons>
+                    <Ionicons name="md-add" color="#620232" style={{ position: "absolute", bottom: 5, right: 35, fontWeight: "bold" }} size={35}></Ionicons>
 
                 </View>
 
                 <View style={[{ flex: 200 },]}>
 
                 </View>
-                <View style={[{ flex: 457 },]}>
+                <View style={[{ flex: 667 },]}>
 
                 </View>
                 <View style={[{ flex: 200 },]}>
@@ -69,7 +73,7 @@ export default class PostScreen extends React.Component {
 
 
 
-                <View style={[{ flex: 300 },]}>
+                <View style={[{ flex: 200 },]}>
 
                 </View>
 
@@ -84,7 +88,14 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-
+    header: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderBottomWidth: 1,
+        borderBottomColor: "#CECECE8F",
+        width:"100%",
+        
+    },
 
     avatarLogoView: {
         backgroundColor: "rgba(162,4,83,0.1)",
@@ -94,10 +105,10 @@ const styles = StyleSheet.create({
         height: "100%",
         width: "28%",
     },
-    avatarLogo:{
+    avatarLogo: {
         height: "81%",
         width: "67%",
-    
+
     },
     button: {
         flex: 1,
@@ -113,7 +124,7 @@ const styles = StyleSheet.create({
 
         height: "70%",
         width: "43%",
-        
+
     },
 
 
