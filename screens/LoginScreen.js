@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
         fontWeight: "600",
         textAlign: "center",
     },
-    form: {
+        form: {
         flex: 506,
 
         marginHorizontal: "8%",
